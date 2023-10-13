@@ -18,5 +18,6 @@ public class Variables {
         System.out.println("Zadej cislo:");
         int readNumber = sc.nextInt();
         System.out.println("Zadal jsi: " + readNumber);
+        System.out.println("Runy je nufik");
     }
 }
