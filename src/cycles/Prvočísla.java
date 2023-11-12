@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class Prvočísla {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        System.out.println("Zadej max hranici");
         int input = sc.nextInt();
         boolean prime;
 //        for (int i = 2; i < input; i++) {
@@ -22,7 +20,6 @@ public class Prvočísla {
 //                System.out.println(i);
 //
 //            }
-//            }
+            }
         }
-    }
 

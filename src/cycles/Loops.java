@@ -21,7 +21,7 @@ public class Loops {
 //        }
 
         int dimension =  100;
-        for (int i = 1; i < dimension*dimension+1; i++) {
+        for (int i = 1; i < dimension*100+1; i++) {
             System.out.print("#\t");
             if (i % dimension == 0){
                 System.out.println();
