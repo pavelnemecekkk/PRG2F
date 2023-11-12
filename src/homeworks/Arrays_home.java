@@ -115,6 +115,6 @@ public class Arrays_home {
         }
 
         }
-        System.out.println("Tips: " + tip);
+//        System.out.println("Tips: " + tip);
         }
 
