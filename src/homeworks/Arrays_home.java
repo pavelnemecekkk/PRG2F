@@ -104,17 +104,27 @@ public class Arrays_home {
             pickedNumbers[i] = (int) (Math.random() * 30 + 1);
         }
         System.out.println(Arrays.toString(pickedNumbers));
-
         for (int i = 0; i < guesses.length; i++) {
                 guesses[i] = sc.nextInt();
             }
         System.out.println("Picked numbers " + Arrays.toString(pickedNumbers));
         System.out.println("Guesses" + Arrays.toString(guesses));
-
+        int num = 0;
         for (int i = 0; i < guesses.length; i++) {
+            for (int j = 0; j < pickedNumbers.length; j++) {
+                if (pickedNumbers[j] == guesses[i]){
+                    num = guesses[i];
+                    tip++;
+                }
+            }
+            if (num != guesses[i]){
+                System.err.print(num + " ");
+            } else {
+                System.out.print(guesses[i] + " ");
+            }
         }
-
-        }
-//        System.out.println("Tips: " + tip);
-        }
+        System.out.println();
+        System.out.println("Tips:" + tip);
+    }
+}
 

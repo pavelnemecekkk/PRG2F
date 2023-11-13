@@ -17,12 +17,12 @@ public class cycles {
 //        System.out.println(soucet+1);
 
 //      Cvičení dva, Faktorialy
-//        int num = sc.nextInt();
-//        int vysledek = num;
-//        for (int i = 1 ; i < num; i++) {
-//            vysledek = vysledek * i;
-//        }
-//        System.out.println(vysledek);
+      int num = sc.nextInt();
+      long vysledek = num;
+      for (int i = 2 ; i < num; i++) {
+          vysledek = vysledek * i;
+      }
+      System.out.println(vysledek);
 
 //        Cvičení tři, Tipovací hra
 //       int randomnum = (int) (Math.random() * 100 + 1);
