@@ -32,16 +32,5 @@ public class CV2 {
 //            System.out.print(array[array.length - i -1] + " ");
 //        }
 //        System.out.println(array[array.length/2]);
-
-        System.out.println();
-        System.out.println();
-        for (int i = 0; i < array.length/2; i++) {
-            for (int j = array.length - 1; j >= args.length/2; j--) {
-
-                System.out.print(array[i] + " ");
-                System.out.print(array[j] + " ");
-            }
-
         }
     }
-        }

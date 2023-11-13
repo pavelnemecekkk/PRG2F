@@ -112,12 +112,12 @@ public class Arrays_home {
         int num = 0;
         for (int i = 0; i < guesses.length; i++) {
             for (int j = 0; j < pickedNumbers.length; j++) {
-                if (pickedNumbers[j] == guesses[i]){
+                if (pickedNumbers[j] == guesses[i]) {
                     num = guesses[i];
                     tip++;
                 }
             }
-            if (num != guesses[i]){
+            if (num == guesses[i]){
                 System.err.print(num + " ");
             } else {
                 System.out.print(guesses[i] + " ");
