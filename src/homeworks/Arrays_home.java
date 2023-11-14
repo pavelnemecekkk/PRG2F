@@ -115,16 +115,18 @@ public class Arrays_home {
                 if (pickedNumbers[j] == guesses[i]) {
                     num = guesses[i];
                     tip++;
+                    break;
                 }
             }
             if (num == guesses[i]){
-                System.err.print(num + " ");
+                System.out.print("\u001B[31m" + num + " " + "\u001B[0m");
             } else {
                 System.out.print(guesses[i] + " ");
             }
         }
         System.out.println();
         System.out.println("Tips:" + tip);
+
     }
 }
 
