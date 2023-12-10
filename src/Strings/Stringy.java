@@ -18,7 +18,7 @@ public class Stringy {
 
 
         // String x = "52";
-        //Integer.parseInt("x") => vezmu si ze stringu "52" a převedu do Stringu
+        //Integer.parseInt("x") => vezmu si ze stringu "52" a převedu do Int
         // Můžeme použít i v double či char
         // O převedení z Int do Stringu můžeme to převést takhle:
         // y = 5555;
