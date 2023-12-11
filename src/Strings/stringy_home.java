@@ -40,17 +40,17 @@ public class stringy_home {
 
         // Cvičení tři
 
-       String oppositeCase = "pepazdepa";
-       String novy = "";
-       for (int i = 0; i < oppositeCase.length(); i++) {
-
-           if (oppositeCase.charAt(i) % 2 == 1) {
-               novy += oppositeCase.toLowerCase().charAt(i);
-           } else {
-               novy += oppositeCase.toUpperCase().charAt(i);
-           }
-       }
-       System.out.println(novy);
+//       String oppositeCase = "pepazdepa";
+//       String novy = "";
+//       for (int i = 0; i < oppositeCase.length(); i++) {
+//
+//           if (oppositeCase.charAt(i) % 2 == 1) {
+//               novy += oppositeCase.toLowerCase().charAt(i);
+//           } else {
+//               novy += oppositeCase.toUpperCase().charAt(i);
+//           }
+//       }
+//       System.out.println(novy);
 
 
         // Cvičení čtyři
@@ -78,7 +78,45 @@ public class stringy_home {
 
         // Cvičení šest
 
-        String number = "4200";
+//        String number = "4200";
+//        String num = "";
+//
+//        for (int i = number.length()-1; i >= 0; i--) {
+//            num += number.charAt(i);
+//
+//        }
+//        System.out.println(num);
 
+        // cvičení sedm
+
+//        String name = "meme";
+//        String koncovka = sc.nextLine();
+//        String fileName = name + "." + koncovka ;
+//        System.out.println(fileName);
+
+        // Bonus Palindrom
+
+//        String thing = sc.nextLine();
+//        String palindrom = "";
+//
+//        for (int i = thing.length()-1; i >= 0; i--) {
+//            palindrom += thing.charAt(i);
+//        }
+//        if (thing.equalsIgnoreCase(palindrom)){
+//            System.out.println("Jedná se o palindrom");
+//        } else {
+//            System.out.println("Nejedná se o palindrom");
+//        }
+
+        // Bonus Morseovka
+        String[] morseovka = {"A .-", "B -.."};
+        String user = sc.nextLine();
+        String end = "";
+
+//        for (int i = 0; i < morseovka.length; i++) {
+//            if (morseovka[i].contains(user.charAt(i))){
+//                end += ;
+//            }
+//        }
     }
 }
