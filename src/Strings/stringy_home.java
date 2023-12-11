@@ -40,16 +40,17 @@ public class stringy_home {
 
         // Cvičení tři
 
-//        String oppositeCase = "pepazdepa";
-//        for (int i = 0; i < oppositeCase.length(); i++) {
-//
-//            if (oppositeCase.charAt(i) % 2 == 1) {
-//                oppositeCase.
-//            } else {
-//                oppositeCase.charAt(i) = oppositeCase.toLowerCase();
-//            }
-//        }
-//        System.out.println(oppositeCase);
+       String oppositeCase = "pepazdepa";
+       String novy = "";
+       for (int i = 0; i < oppositeCase.length(); i++) {
+
+           if (oppositeCase.charAt(i) % 2 == 1) {
+               novy += oppositeCase.toLowerCase().charAt(i);
+           } else {
+               novy += oppositeCase.toUpperCase().charAt(i);
+           }
+       }
+       System.out.println(novy);
 
 
         // Cvičení čtyři
