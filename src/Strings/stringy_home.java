@@ -19,24 +19,24 @@ public class stringy_home {
 //        }
 
         // Cvičení dva
-//        String text = sc.nextLine();
-//        boolean text1 = false;
-//        for (int i = 0; i < text.length(); i++) {
-//            if (text.length() - 1 == i){
-//                break;
-//            }
-//            else {
-//                if (text.charAt(i) == text.charAt(i+1)){
-//                    text1 = true;
-//                    break;
-//                }
-//            }
-//        }
-//        if (text1){
-//            System.out.println("Jsou tam zdvojené hlásky");
-//        }else {
-//            System.out.println("Nejsou tam zdvojené hlásky");
-//        }
+//       String text = sc.nextLine();
+//       boolean text1 = false;
+//       for (int i = 0; i < text.length(); i++) {
+//           if (text.length() - 1 == i){
+//               break;
+//           }
+//           else {
+//               if (text.charAt(i) == text.charAt(i+1)){
+//                   text1 = true;
+//                   break;
+//               }
+//           }
+//       }
+//       if (text1){
+//           System.out.println("Jsou tam zdvojené hlásky");
+//       }else {
+//           System.out.println("Nejsou tam zdvojené hlásky");
+//       }
 
         // Cvičení tři
 
@@ -65,7 +65,7 @@ public class stringy_home {
 //        String[] names = {"Jan", "Karel", "„František Dlouhojmenný", "„Pablo Diego José Francisco de Paula Juan\n" +
 //                "Nepomuceno María de los Remedios Cipriano de la Sanơsima Trinidad Ruiz y\n" +
 //                "Picasso", "Eva"};
-//        String end = null;
+//        String end = " ";
 //        for (int i = 0; i < names.length; i++) {
 //            for (int j = 0; j < names.length ; j++) {
 //                if (names[i].length() > names[j].length()){
@@ -107,16 +107,5 @@ public class stringy_home {
 //        } else {
 //            System.out.println("Nejedná se o palindrom");
 //        }
-
-        // Bonus Morseovka
-        String[] morseovka = {"A .-", "B -.."};
-        String user = sc.nextLine();
-        String end = "";
-
-//        for (int i = 0; i < morseovka.length; i++) {
-//            if (morseovka[i].contains(user.charAt(i))){
-//                end += ;
-//            }
-//        }
+        }
     }
-}
