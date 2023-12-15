@@ -22,7 +22,7 @@ public class test_3 {
         for (int i = 0; i < names.length; i++) {
             if (i == random){
                 fullname += names[i] + " ";
-            break;
+                break;
             }
         }
 
@@ -35,6 +35,7 @@ public class test_3 {
             }
         }
         System.out.println(fullname);
+
 
 
 
