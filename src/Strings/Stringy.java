@@ -1,5 +1,7 @@
 package Strings;
 
+import java.util.Scanner;
+
 public class Stringy {
     public static void main(String[] args) {
 
@@ -23,5 +25,8 @@ public class Stringy {
         // O převedení z Int do Stringu můžeme to převést takhle:
         // y = 5555;
         // String.valueOf(y) => "5555";
+
+
+
      }
 }
