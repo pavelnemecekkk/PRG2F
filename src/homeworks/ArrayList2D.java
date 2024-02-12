@@ -101,8 +101,43 @@ public class ArrayList2D {
 
         int size = sc.nextInt();
         int[][] pole = new int[size][size];
-        int input1 = sc.nextInt();
-        int input2 = sc.nextInt();
+        int poklad = 1;
+        int randomx = (int) (Math.random() * size);
+        int randomy = (int) (Math.random() * size);
+        pole[randomx][randomy] = poklad;
+        for (int i = 0; i < pole.length; i++) {
+            for (int j = 0; j < pole[i].length; j++) {
+                System.out.print(pole[i][j] + "\t");
+            }
+            System.out.println();
+        }
+        int inputx = sc.nextInt();
+        int inputy = sc.nextInt();
+        boolean flag = true;
+        int counter = 0;
+
+        while (flag) {
+            for (int i = 0; i < pole.length; i++) {
+                for (int j = 0; j < pole[i].length; j++) {
+                    if (inputy-1 == randomy) {
+                        break;
+                    }
+                }
+                if (inputx-1 != randomx) {
+                    counter++;
+                    System.out.println("Netrefil si to");
+                    System.out.println("Počet pokusů je: " + counter);
+                    inputx = sc.nextInt();
+                    inputy = sc.nextInt();
+                } else {
+                    flag = false;
+                    counter++;
+                    break;
+                }
+            }
+
+        }
+        System.out.println("Počet pokusů je: " + counter);
 
     }
 }
