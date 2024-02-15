@@ -53,7 +53,7 @@ public class ArrayList2D {
 //        while (!input.equals("fin")) {
 //            if (input.startsWith("el") || input.startsWith("la") || input.startsWith("un")) {
 //                spanishword.add(input);
-//               input = sc.nextLine();
+//                input = sc.nextLine();
 //            } else {
 //                input = sc.nextLine();
 //            }
@@ -63,81 +63,91 @@ public class ArrayList2D {
 
         //cv.4 Genereca random čísel do Arraylistu poté odstranit čísla menší jako 50, poté počet čísel vypsat, kteri byli odstraněny
 
-//        ArrayList<Integer> nums = new ArrayList<>();
-//
-//        for (int i = 0; i < 100; i++) {
-//            nums.add((int) (Math.random() * 101));
-//        }
-//        System.out.println(nums);
-//        System.out.println(nums.size());
+        ArrayList<Integer> nums = new ArrayList<>();
+
+        for (int i = 0; i < 100; i++) {
+            nums.add((int) (Math.random() * 101));
+        }
+//        ArrayList<Integer> numslower = new ArrayList<>();
 //        for (int i = 0; i < nums.size(); i++) {
-//        if (nums.get(i) < 50){
-//            nums.remove(nums.get(i));
+//            if (nums.get(i) < 50){
+//                numslower.add(i);
+//            }
 //        }
-//        }
+//
+//        nums.removeAll(numslower);
+//        System.out.println(numslower);
+//        System.out.println(numslower.size());
+//
+//       nums.removeIf(n -> (n<50) );
 //        System.out.println(nums);
 //        System.out.println(nums.size());
 
+
         //cv.5 Průměr z 2D pole
-//        int[][] score = {   {1,5,3,2,6},
-//                            {4,5,2,5,6},
-//                            {9,9,7,8,9},
-//                            {3,3,1,1,2}
-//        };
-//        long avarage = 0;
-//        int counter = 0;
-//        for (int i = 0; i < score.length; i++) {
-//            for (int j = 0; j < score[i].length; j++) {
-//                avarage += score[i][j];
-//                }
-//            avarage = avarage / score[i].length;
-//            if (avarage > 7.5){
-//                counter++;
-//            }
-//        }
-//        System.out.println("Počet filmů s hodnocením větším jak 7.5 jsou: " + counter);
+        String[][] score = {{"film1", "1", "5", "3", "2", "6"},
+                {"film2", "4", "5", "2", "5", "6"},
+                        {"film3", "9", "9", "7", "8", "9"},
+                                {"film4", "3", "3", "1", "1", "2"},
+                                };
+        long avarage = 0;
+        int counter = 0;
+        int cislo = 0;
+        for (int i = 0; i < score.length; i++) {
+            for (int j = 1; j < score[i].length; j++) {
+               cislo = Integer.parseInt(score[i][j]);
+               avarage += cislo;
+                System.out.print(avarage + " ");
+            }
+            avarage = avarage / score[i].length;
+            System.out.print("Pepe" + avarage + " ");
+            if (avarage >= 7) {
+                counter++;
+            }
+        }
+        System.out.println("Počet filmů s hodnocením větším jak 7 jsou: " + counter);
 
         //cv 6 - Bonus
 
-        int size = sc.nextInt();
-        int[][] pole = new int[size][size];
-        int poklad = 1;
-        int randomx = (int) (Math.random() * size);
-        int randomy = (int) (Math.random() * size);
-        pole[randomx][randomy] = poklad;
-        for (int i = 0; i < pole.length; i++) {
-            for (int j = 0; j < pole[i].length; j++) {
-                System.out.print(pole[i][j] + "\t");
-            }
-            System.out.println();
-        }
-        int inputx = sc.nextInt();
-        int inputy = sc.nextInt();
-        boolean flag = true;
-        int counter = 0;
-
-        while (flag) {
-            for (int i = 0; i < pole.length; i++) {
-                for (int j = 0; j < pole[i].length; j++) {
-                    if (inputy-1 == randomy) {
-                        break;
-                    }
-                }
-                if (inputx-1 != randomx) {
-                    counter++;
-                    System.out.println("Netrefil si to");
-                    System.out.println("Počet pokusů je: " + counter);
-                    inputx = sc.nextInt();
-                    inputy = sc.nextInt();
-                } else {
-                    flag = false;
-                    counter++;
-                    break;
-                }
-            }
-
-        }
-        System.out.println("Počet pokusů je: " + counter);
+//        int size = sc.nextInt();
+//        int[][] pole = new int[size][size];
+//        int poklad = 1;
+//        int randomx = (int) (Math.random() * size);
+//        int randomy = (int) (Math.random() * size);
+//        pole[randomx][randomy] = poklad;
+//        for (int i = 0; i < pole.length; i++) {
+//            for (int j = 0; j < pole[i].length; j++) {
+//                System.out.print(pole[i][j] + "\t");
+//            }
+//            System.out.println();
+//        }
+//        int inputx = sc.nextInt();
+//        int inputy = sc.nextInt();
+//        boolean flag = true;
+//        int counter = 0;
+//
+//        while (flag) {
+//            for (int i = 0; i < pole.length; i++) {
+//                for (int j = 0; j < pole[i].length; j++) {
+//                    if (inputy - 1 == randomy) {
+//                        break;
+//                    }
+//                }
+//                if (inputx - 1 != randomx) {
+//                    counter++;
+//                    System.out.println("Netrefil si to");
+//                    System.out.println("Počet pokusů je: " + counter);
+//                    inputx = sc.nextInt();
+//                    inputy = sc.nextInt();
+//                } else {
+//                    flag = false;
+//                    counter++;
+//                    break;
+//                }
+//            }
+//
+//        }
+//        System.out.println("Počet pokusů je: " + counter);
 
     }
-}
+    }
