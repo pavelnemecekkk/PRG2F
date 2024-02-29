@@ -1,5 +1,7 @@
 package MultipleArray;
 
+import java.util.Scanner;
+
 public class MultipleArray {
     public static void main(String[] args) {
 
@@ -21,13 +23,11 @@ public class MultipleArray {
 
        int rows = 10;
        int cols = 10;
-       int counter = 1;
        int[][] matrix = new int[rows][cols];
 
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
-                matrix[i][j] = counter;
-                counter++;
+                matrix[i][j] = (int) (Math.random() * 90 + 10 );
             }
         }
 
@@ -37,6 +37,45 @@ public class MultipleArray {
             }
             System.out.println();
         }
+        System.out.println();
 
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print(matrix[i][j] + "\t");
+            }
+            System.out.println();
+        }
+
+
+
+        // vypsání n-teho radku, n zada uzivatel
+
+        Scanner sc = new Scanner(System.in);
+
+        int input = sc.nextInt();
+
+        for (int i = 0; i < matrix.length;i++) {
+            System.out.print(matrix[input-1][i] + "\t");
+
+        }
+// Vypsání n-tého sloupce
+        int n = sc.nextInt();
+        for (int i = 0; i < matrix.length;i++) {
+            System.out.println(matrix[i][n-1] + "\t");
+        }
+
+        //nasobilka
+        System.out.println("Zadej cislo");
+        int num = sc.nextInt();
+
+        int[][] cube = new int[num][num];
+
+        for (int i = 0; i < cube.length; i++) {
+            for (int j = 0; j < cube[i].length ; j++) {
+                cube[i][j] = (j+1)*(i+1);
+                System.out.print(cube[i][j] + "\t");
+            }
+            System.out.println();
+        }
     }
 }
