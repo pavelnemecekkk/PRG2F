@@ -20,7 +20,7 @@ public class practice {
     //time convert
 
     public static String minuteconvert(int seconds){
-        String time;
+        String time = " ";
         int min;
         int sec;
 
