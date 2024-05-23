@@ -1,4 +1,4 @@
-package OPP_TEST;
+package OOP_TEST;
 
 public class Rent {
 
